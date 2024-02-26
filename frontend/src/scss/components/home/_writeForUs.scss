@@ -1,0 +1,55 @@
+.contact-page {
+  background-color: white;
+  min-height: auto;
+}
+
+.contact {
+  background-color: white;
+  height: calc(99vh - 80px);
+  display: flex;
+  justify-content: center;
+
+  .card {
+    width: 60%;
+    min-height: 80vh;
+    align-items: center;
+    padding: 0px;
+    border-radius: 10px;
+
+    .contact-form {
+      border-radius: 10px;
+      background-color: #fdfdfd;
+      padding: 5px 30px;
+      min-width: 100%;
+
+      h1 {
+        text-align: center;
+      }
+    }
+
+    @media screen and (max-width: 1000px) {
+      width: 80%;
+
+      .contact {
+        .card {
+          .contact-form {
+            padding: 5px 15px;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 576px) {
+      .contact-page {
+        min-height: auto;
+      }
+      width: 80%;
+      height: auto;
+      padding: 0px;
+
+      .contact-form {
+        min-width: 100%;
+      }
+    }
+  }
+}
